@@ -21,11 +21,11 @@
 			<fieldset>         
 				<legend>Basic Info</legend>
 
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="user_name" autofocus>
+				<label for="name">Name:<input type="text" id="name" name="user_name"></label>
+				
 
-				<label for="mail">Email:</label>
-				<input type="email" id="mail" name="user_email">
+				<label for="mail">Email:<input type="email" id="mail" name="user_email"></label>
+				
 
 				<label for="title" id="titleLabel">Job Role</label>
 				<select id="title" name="user_title">
@@ -37,7 +37,7 @@
 					<option value="student">Student</option>
 					<option value="other">Other</option>  
 				</select>
-				<input type="text" id="other-title" class="is-hidden" placeholder="Your Title">
+				<input type="text" id="other-title" class="" placeholder="Your Title">
 			</fieldset>
 		 
 			<fieldset class="shirt">
@@ -50,6 +50,7 @@
 						<option value="medium" selected>M</option>
 						<option value="large">L</option>
 						<option value="extra large">XL</option>
+						<option value="extra extra large">XXL</option>
 					</select>
 				</div>
 
@@ -62,8 +63,8 @@
 					</select>
 				</div>
 
-				<div id="colors-js-puns" class="is-hidden">
-					<div id="colorPunsWrap" class="is-hidden">
+				<div id="colors-js-puns" class="">
+					<div id="colorPunsWrap" class="">
 						<label for="colorPuns">Color:</label>
 						<select id="colorPuns">
 							<option value="Select Color" selected disabled hidden>Select Color</option>
@@ -73,7 +74,7 @@
 						</select>
 					</div>
 						
-					<div id="colorLoveWrap" class="is-hidden">
+					<div id="colorLoveWrap" class="">
 						<label for="colorLove">Color:</label>
 						<select id="colorLove">
 							<option value="Select Color" selected disabled hidden>Select Color</option>
@@ -107,21 +108,21 @@
 					<option value="bitcoin">Bitcoin</option>
 				</select>
 
-				<div id="credit-card" class="credit-card is-hidden">
+				<div id="credit-card" class="credit-card">
 
 					<div class="col-6 col">
 						<label for="cc-num">Card Number:</label>
-						<input id="cc-num" name="user_cc-num" type="text">
+						<input class="ccDetails" id="cc-num" name="user_cc-num" type="text">
 					</div>
 
 					<div class="col-3 col">
 						<label for="zip">Zip Code:</label>
-						<input id="zip" name="user_zip" type="text"> 
+						<input class="ccDetails" id="zip" name="user_zip" type="text"> 
 					</div>
 
 					<div class="col-3 col">
 						<label for="cvv">CVV:</label>
-						<input id="cvv" name="user_cvv" type="text"> 
+						<input class="ccDetails" id="cvv" name="user_cvv" type="text"> 
 					</div>
 
 					<label>Expiration Date:</label>
@@ -152,23 +153,17 @@
 					</div>	                  	         
 				</div>
 
-				<div id="paypal" class="is-hidden">
+				<div id="paypal" class="">
 					<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
 				</div> 
 
-				<div id="bitcoin" class="is-hidden">
+				<div id="bitcoin" class="">
 					<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
 				</div>                  
-
 			</fieldset>        
-		   
 			<button id="submitButton" type="submit">Register</button>
-			
-			<h2 id="formError" class="formError is-hidden"></h2>
-			<br><button id="closeError" class="closeError is-hidden">Close</button>
 		</form>
 	</div>
-	<!-- <script type="text/JavaScript" src="js/select.js"></script> -->
 	<script type="text/JavaScript" src="js/myScripts.js"></script>
 </body>
 </html>
